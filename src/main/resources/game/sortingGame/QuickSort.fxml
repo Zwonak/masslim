@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/22" xmlns:fx="http://javafx.com/fxml/1" fx:controller="game.sortingGame.QuickSort">
+   <BorderPane layoutX="159.0" layoutY="86.0" prefWidth="600.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+      <top>
+         <AnchorPane prefHeight="53.0" prefWidth="600.0" BorderPane.alignment="CENTER">
+            <Label alignment="CENTER" layoutX="180.0" layoutY="12.0" prefHeight="18.0" prefWidth="238.0" text="Quick Sort">
+               <font>
+                  <Font name="Microsoft Himalaya" size="32.0" />
+               </font>
+            </Label>
+            <Button fx:id="backButton" layoutX="14.0" layoutY="13.0" mnemonicParsing="false" onAction="#back" prefHeight="26.0" prefWidth="82.0" text="Go Back">
+               <font>
+                  <Font name="Microsoft Himalaya" size="19.0" />
+               </font></Button>
+         </AnchorPane>
+      </top>
+      <prefHeight>400.0</prefHeight>
+      <center>
+         <VBox alignment="CENTER" prefHeight="220.0" prefWidth="600.0" spacing="50.0" BorderPane.alignment="CENTER">
+            <Label fx:id="userArrayLabel" prefHeight="2.0" prefWidth="320.0">
+               <font>
+                  <Font name="Microsoft Himalaya" size="26.0" />
+               </font>
+            </Label>
+            <Label fx:id="ActionLabel" alignment="CENTER" contentDisplay="CENTER" prefHeight="38.0" prefWidth="554.0" text="Press Start">
+               <font>
+                  <Font name="Microsoft Himalaya" size="45.0" />
+               </font>
+            </Label>
+            <Label fx:id="ArrayLoop" alignment="CENTER" prefHeight="50.0" prefWidth="627.0">
+               <font>
+                  <Font name="Microsoft Himalaya" size="25.0" />
+               </font>
+            </Label>
+            <Button fx:id="StartBtn" mnemonicParsing="false" onAction="#start" prefHeight="47.0" prefWidth="188.0" text="Start">
+               <font>
+                  <Font name="Microsoft Himalaya" size="20.0" />
+               </font></Button>
+         </VBox>
+      </center>
+   </BorderPane>
+</AnchorPane>

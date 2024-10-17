@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="452.0" prefWidth="705.0" xmlns="http://javafx.com/javafx/22" xmlns:fx="http://javafx.com/fxml/1"
+            fx:controller="game.sortingGame.UserInputController">
+   <HBox fx:id="textFieldContainer" alignment="CENTER" layoutX="99.0" layoutY="53.0" prefHeight="100.0"
+         prefWidth="522.0" spacing="20.0">
+      <TextField fx:id="textField0" prefWidth="30.0"/>
+      <TextField fx:id="textField1" prefWidth="30.0"/>
+      <TextField fx:id="textField2" layoutX="281.0" layoutY="48.0" prefWidth="30.0"/>
+      <TextField fx:id="textField3" layoutX="307.0" layoutY="48.0" prefWidth="30.0"/>
+      <TextField fx:id="textField4" layoutX="332.0" layoutY="48.0" prefWidth="30.0"/>
+      <TextField fx:id="textField5" layoutX="356.0" layoutY="48.0" prefWidth="30.0"/>
+      <TextField fx:id="textField6" layoutX="382.0" layoutY="48.0" prefWidth="30.0"/>
+      <TextField fx:id="textField7" layoutX="407.0" layoutY="48.0" prefWidth="30.0"/>
+      <TextField fx:id="textField8" layoutX="432.0" layoutY="48.0" prefWidth="30.0"/>
+      <TextField fx:id="textField9" layoutX="457.0" layoutY="48.0" prefWidth="30.0"/>
+   </HBox>
+   <Label fx:id="arrayLabel" alignment="CENTER" layoutX="97.0" layoutY="182.0" prefHeight="44.0" prefWidth="513.0"
+          style="-fx-background-color: white;">
+      <font>
+         <Font name="System Bold" size="24.0"/>
+      </font>
+   </Label>
+   <HBox alignment="CENTER" layoutX="97.0" layoutY="287.0" prefHeight="100.0" prefWidth="514.0" spacing="20.0">
+      <Button fx:id="bubbleSortButton" mnemonicParsing="false" onAction="#toBubble" text="Bubble Sort"/>
+      <Button fx:id="insertionSortButton" mnemonicParsing="false" onAction="#toInsertion" text="Insertion Sort"/>
+      <Button fx:id="selectionSortButton" mnemonicParsing="false" onAction="#toSelect" text="selection Sort"/>
+      <Button fx:id="quickSortButton" mnemonicParsing="false" onAction="#toQuick" text="Quick Sort"/>
+      <Button fx:id="mergeSortButton" layoutX="167.0" layoutY="10.0" mnemonicParsing="false" onAction="#toMerge"
+              text="Merge Sort"/>
+   </HBox>
+   <Button fx:id="backButton" layoutX="26.0" layoutY="28.0" mnemonicParsing="false" onAction="#back" prefHeight="26.0"
+           prefWidth="135.0" text="back"/>
+</AnchorPane>
